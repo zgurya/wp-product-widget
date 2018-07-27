@@ -33,7 +33,7 @@ class WP_Products_Wg_Widget extends WP_Widget {
                 <input class="" id="<?php echo $this->get_field_id('order1'); ?>" name="<?php echo $this->get_field_name('order'); ?>" type="radio" value="ASC" <?php checked( $order, 'ASC' ); ?> />
             </label><br>
             <label for="<?php echo $this->get_field_id('radio_buttons'); ?>">
-                <?php _e('Descending', 'wp-products-wg'); ?>:
+                <?php _e('Descending', 'wp-products-wg'); ?>: 	
                 <input class="" id="<?php echo $this->get_field_id('order2'); ?>" name="<?php echo $this->get_field_name('order'); ?>" type="radio" value="DESC" <?php checked( $order, 'DESC' ); ?> />
             </label>
         </p>
