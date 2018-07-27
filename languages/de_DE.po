@@ -1,0 +1,316 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Products Widget\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-27 18:27+0300\n"
+"PO-Revision-Date: 2018-07-27 18:27+0300\n"
+"Last-Translator: a.zgurya <a.zgurya@gmail.com>\n"
+"Language-Team: Andrey Zgurya\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: languages\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: admin/add-meta-box.php:17
+msgid "Rating"
+msgstr "Bewertung"
+
+#: admin/add-settings.php:19
+msgid "WordPress Products Widget Settings"
+msgstr "WordPress Produkte Widget Einstellungen"
+
+#: admin/add-settings.php:25
+msgid "Select default group"
+msgstr "Wählen Sie die Standardgruppe aus"
+
+#: admin/widget.php:7
+msgid "Product Widget"
+msgstr "Produkt Widget"
+
+#: admin/widget.php:22
+msgid "Title"
+msgstr "Titel"
+
+#: admin/widget.php:26
+msgid "Products count"
+msgstr "Produkte zählen"
+
+#: admin/widget.php:30
+msgid "Choose type ordering"
+msgstr "Wählen Sie die Art der Bestellung"
+
+#: admin/widget.php:32
+msgid "Ascending"
+msgstr "Aufsteigend"
+
+#: admin/widget.php:36
+msgid "Descending"
+msgstr "Absteigend"
+
+#~ msgid "Products count:"
+#~ msgstr "Produkte zählen"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "<span>Back</span> to top"
+#~ msgstr "<span>Retourner</span> en haut"
+
+#~ msgid "Payment"
+#~ msgstr "Paiement"
+
+#~ msgid "Join us"
+#~ msgstr "Rejoignez-nous sur"
+
+#~ msgid "Novex Paris All Rights Reserved"
+#~ msgstr "Novex Paris Tous droits réservés"
+
+#~ msgid "Checkout"
+#~ msgstr "Check-out"
+
+#~ msgid "Shipping & payment"
+#~ msgstr "Expédition & livraison"
+
+#~ msgid "Confirmation"
+#~ msgstr "Confirmation"
+
+#~ msgid "Thank you"
+#~ msgstr "Je vous remercie"
+
+#~ msgid "Order Number"
+#~ msgstr "Numéro de commande"
+
+#~ msgid "Order Confirmation"
+#~ msgstr "Confirmation de commande"
+
+#~ msgid "Bill to"
+#~ msgstr "Facturer"
+
+#~ msgid "Color"
+#~ msgstr "Couleur"
+
+#~ msgid "Product code"
+#~ msgstr "Code produit"
+
+#~ msgid "Order Total"
+#~ msgstr "Total de la commande"
+
+#~ msgid "Search result"
+#~ msgstr "Votre recherche"
+
+#~ msgid "Result (%d) for"
+#~ msgstr "Resultats (%d) pour"
+
+#~ msgid "Back to shop"
+#~ msgstr "Retour à la boutique"
+
+#~ msgid "Reset password"
+#~ msgstr "Réinitialiser le mot de passe"
+
+#~ msgid "Customer care"
+#~ msgstr "Service Clients"
+
+#~ msgid "Search"
+#~ msgstr "Chercher"
+
+#~ msgid "Costomer Care"
+#~ msgstr "Service Clients"
+
+#~ msgid "About us"
+#~ msgstr "À propos"
+
+#~ msgid "Account"
+#~ msgstr "Compte"
+
+#~ msgid "Cart"
+#~ msgstr "Panier"
+
+#~ msgid "Items"
+#~ msgstr "Articles"
+
+#~ msgid "Go to cart"
+#~ msgstr "Panier"
+
+#~ msgid "Professional"
+#~ msgstr "Professionnels"
+
+#~ msgid "Password"
+#~ msgstr "Mot de passe"
+
+#~ msgid "Forgot Password?"
+#~ msgstr "Mot de passe oublié?"
+
+#~ msgid "Sign IN"
+#~ msgstr "Connexion"
+
+#~ msgid "Register Now !"
+#~ msgstr "Créez votre compte !"
+
+#~ msgid "Retailer"
+#~ msgstr "Particuliers"
+
+#~ msgid "Shipping"
+#~ msgstr "Livraison"
+
+#~ msgid "Shop now"
+#~ msgstr "Par ici !"
+
+#~ msgid "New Arrivals"
+#~ msgstr "Nouveautés"
+
+#~ msgid "Best Sellers"
+#~ msgstr "Best Sellers"
+
+#~ msgid "Free delivery<br>on 1st order"
+#~ msgstr "Livraison offerte<br>sur votre première commande"
+
+#~ msgid "30 days<br>to change your mind"
+#~ msgstr "30 jours<br>pour changer d'avis"
+
+#~ msgid "Secured payment<br>100% worry-free"
+#~ msgstr "Paiement sécurisé"
+
+#~ msgid "Re-enter password"
+#~ msgstr "Retaper le mot de passe"
+
+#~ msgid "Additional information"
+#~ msgstr "Information additionnelle"
+
+#~ msgid "Required"
+#~ msgstr "Requis"
+
+#~ msgid "First name"
+#~ msgstr "Prenom"
+
+#~ msgid "Last name"
+#~ msgstr "Nom"
+
+#~ msgid "Address"
+#~ msgstr "Adresse\n"
+
+#~ msgid "Postal code"
+#~ msgstr "Code postal\n"
+
+#~ msgid "City"
+#~ msgstr "Ville"
+
+#~ msgid "Country"
+#~ msgstr "Pays"
+
+#~ msgid "Phone number"
+#~ msgstr "Telephone"
+
+#~ msgid "First and Last name"
+#~ msgstr "Prenom et nom"
+
+#~ msgid "Company name"
+#~ msgstr "Nom de societe"
+
+#~ msgid "Social reason"
+#~ msgstr "Raison sociale"
+
+#~ msgid "Payment method"
+#~ msgstr "Mode de paiement\n"
+
+#~ msgid "Attach a KBIS extract"
+#~ msgstr "Extrait Kbis (Joindre un fichier) "
+
+#~ msgid "Choose file"
+#~ msgstr "Extrait Kbis (Joindre un fichier) "
+
+#~ msgid "Continue to CONFIRMATION"
+#~ msgstr "Continuer à CONFIRMATION"
+
+#~ msgid "Help"
+#~ msgstr "Aidez-moi"
+
+#~ msgid "Customer Service"
+#~ msgstr "Service clients"
+
+#~ msgid "call"
+#~ msgstr "tel"
+
+#~ msgid "novex office"
+#~ msgstr "siège novex"
+
+#~ msgid "Add to cart"
+#~ msgstr "Panier"
+
+#~ msgid "This item has been added to your cart."
+#~ msgstr "Ce produit a été ajouté dans votre panier"
+
+#~ msgid "View cart"
+#~ msgstr "Panier"
+
+#~ msgid "Categories"
+#~ msgstr "Catégories"
+
+#~ msgid "Price"
+#~ msgstr "Prix"
+
+#~ msgid "Add Address +"
+#~ msgstr "Ajouter une adresse +"
+
+#~ msgid "Order summary"
+#~ msgstr "Récapitulatif de la commande"
+
+#~ msgid "items"
+#~ msgstr "articles"
+
+#~ msgid "Dear, %1$s %2$s !"
+#~ msgstr "Madame\\Monsieur, %1$s %2$s !"
+
+#~ msgid "Novex thanks you for your order."
+#~ msgstr "Novex vous remercie pour votre commande."
+
+#~ msgid "It will be shipped under 48H via Colissimo."
+#~ msgstr "Celle-­ci sera expédiée sous 48H via Colissimo."
+
+#~ msgid "We remain at your disposal if necessary"
+#~ msgstr "Nous restons à votre disposition si nécessaire"
+
+#~ msgid "The NOVEX team"
+#~ msgstr "L’équipe NOVEX"
+
+#~ msgid "Quantity"
+#~ msgstr "Quantité"
+
+#~ msgid "Cost"
+#~ msgstr "Coût"
+
+#~ msgid "Remove"
+#~ msgstr "Retirer"
+
+#~ msgid "Back to the shop"
+#~ msgstr "Retour boutique"
+
+#~ msgid "Continue to Checkout"
+#~ msgstr "Continuer à la caisse"
+
+#~ msgid "Continue shopping"
+#~ msgstr "Continuer vos achats"
+
+#~ msgid "Create an Account"
+#~ msgstr "Créer un compte"
+
+#~ msgid "My Account"
+#~ msgstr "Mon compte"
+
+#~ msgid "LOGIN INFORMATION"
+#~ msgstr "INFORMATIONS DE CONNEXION"
+
+#~ msgid "REQUIRED"
+#~ msgstr "REQUIS"
+
+#~ msgid "Create account"
+#~ msgstr "Créer un compte"
+
+#~ msgid "Similar"
+#~ msgstr "Produits similaires"

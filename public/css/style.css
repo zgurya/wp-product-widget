@@ -1,0 +1,15 @@
+.widget .product-thumb a, .widget .product-title a{
+	text-decoration: none;
+	color: #000;
+}
+.widget .product-thumb img{
+	margin-top: 10px;
+}
+.widget .product-thumb a:hover, .widget .product-title a:hover{
+	text-decoration: underline;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.widget .product-rating span.checked {
+    color: orange;
+}
