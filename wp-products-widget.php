@@ -30,6 +30,7 @@ if ( !class_exists( 'WP_Products_Wg' ) ) {
             add_action( 'widgets_init', array($this,'widget_init') );
             add_action('admin_enqueue_scripts', array($this,'add_admin_scripts'));
             add_action('wp_enqueue_scripts', array($this,'add_public_scripts'));
+            add_filter('plugin_action_links_' . plugin_basename(__FILE__), array($this,'add_settings_links'));
         }
         
         public function check_start_session() {
@@ -53,6 +54,11 @@ if ( !class_exists( 'WP_Products_Wg' ) ) {
         public function add_public_scripts(){
             wp_enqueue_style('wp-products-wg-styles', plugin_dir_url( __FILE__ ).('public/css/style.css'));
             wp_enqueue_style('wp-products-wg-font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+        }
+        
+        public function add_settings_links($links) {
+            array_push($links, '<a href="'. esc_url( get_admin_url(null, 'themes.php?page=wp_products_wg_settings') ) .'">'._x('Settings','wp-products-wg').'</a>');
+            return $links;
         }
     }
     new WP_Products_Wg();
