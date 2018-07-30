@@ -63,7 +63,7 @@ class WP_Products_Wg_Widget extends WP_Widget {
             $posts=get_posts(
                 array(
                     'post_type'         => 'products',
-                    'post_status'       => 'public',
+                    'post_status'       => 'publish',
                     'posts_per_page'    => $count,
                     'meta_key'          => 'wp_products_wg_rating',
                     'orderby'          => 'meta_value_num',

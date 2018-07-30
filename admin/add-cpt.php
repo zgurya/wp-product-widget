@@ -1,9 +1,12 @@
 <?php 
 if ( !class_exists( 'WP_Products_Wg_CTP' ) ) {
     class WP_Products_Wg_CTP{
+        
         public function __construct() {
+            
             add_action( 'init', array($this,'add_products_ctp'));
             add_action( 'init', array($this,'add_products_tax'));
+            
         }
         
         public function add_products_ctp() {
@@ -71,8 +74,10 @@ if ( !class_exists( 'WP_Products_Wg_CTP' ) ) {
             
             register_taxonomy(
                 'products_target_groups','products', $args
-                );
+            );
         }
+        
+        
     }
 }
 ?>
