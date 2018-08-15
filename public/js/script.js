@@ -24,7 +24,6 @@ jQuery(document).ready(function($) {
 					setCookie('wp_products_target', target, {expires: 60, path: '/'});
 				}
 				$('.widget.widget_wp_products_wg_widget ul').html(output.html);
-				console.log(output.msg);
 			},
 			error: function(xhr, status, error) {
 				console.log(status);
