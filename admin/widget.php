@@ -58,6 +58,10 @@ class WP_Products_Wg_Widget extends WP_Widget {
         if ( $title ) {
             echo $before_title . $title . $after_title;
         }
+        if(isset($_GET['target'])&&!empty($_GET['target'])&&get_term_by('slug',$_GET['target'],'products_target_groups')){
+            $_SESSION['wp_products_wg_target']=$_GET['target'];
+        }
+
         if(isset($_SESSION['wp_products_wg_target']) || get_option('default-target-group')){
             $term_slug=(isset($_SESSION['wp_products_wg_target']))?$_SESSION['wp_products_wg_target']:get_option('default-target-group');
             $posts=get_posts(
@@ -80,11 +84,11 @@ class WP_Products_Wg_Widget extends WP_Widget {
             );
             if($posts && !empty($posts)){
                 echo '<ul>';
-                foreach( $posts as $post ) : setup_postdata($post);?>
+                foreach( $posts as $post ) :?>
                 	<li>
                 		<div class="product-thumb">
                 			<a href="<?php the_permalink();?>">
-                				<img src="<?php echo get_the_post_thumbnail_url($post->ID, 'thumbnail'); ?>" alt="<?php the_title();?>"></div>
+                				<img src="<?php echo get_the_post_thumbnail_url($post->ID, 'thumbnail'); ?>" alt="<?php echo get_the_title($post->ID);?>"></div>
                 			</a>
                 		<div class="product-rating">
                     		<?php 
@@ -94,11 +98,10 @@ class WP_Products_Wg_Widget extends WP_Widget {
                     		}
                     		?>
                 		</div>
-                		<div class="product-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></div>
+                		<div class="product-title"><a href="<?php the_permalink();?>"><?php echo get_the_title($post->ID);?></a></div>
                 	</li>
                 <?php endforeach;
                 echo '</ul>';
-                wp_reset_postdata();
             }
         }
         echo $after_widget;

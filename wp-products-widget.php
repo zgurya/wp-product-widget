@@ -41,10 +41,6 @@ if ( !class_exists( 'WP_Products_Wg' ) ) {
             if(!session_id()) {
                 session_start();
             }
-            
-            if(isset($_GET['target'])&&!empty($_GET['target'])){
-                $_SESSION['wp_products_wg_target']=$_GET['target'];
-            }
         }
         
         public function widget_init() {
