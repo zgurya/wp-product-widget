@@ -29,7 +29,7 @@ if ( !class_exists( 'WP_Products_Wg_CTP' ) ) {
                 'labels' => $labels,
                 'hierarchical' => true,
                 'description' => 'Products',
-                'supports' => array( 'title', 'thumbnail'),
+                'supports' => array( 'title', 'thumbnail', 'editor', 'excerpt'),
                 'taxonomies' => array( 'target_groups' ),
                 'public' => true,
                 'show_ui' => true,
