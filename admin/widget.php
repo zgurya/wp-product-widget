@@ -58,51 +58,9 @@ class WP_Products_Wg_Widget extends WP_Widget {
         if ( $title ) {
             echo $before_title . $title . $after_title;
         }
-        if(isset($_GET['target'])&&!empty($_GET['target'])&&get_term_by('slug',$_GET['target'],'products_target_groups')){
-            $_SESSION['wp_products_wg_target']=$_GET['target'];
-        }
 
-        if(isset($_SESSION['wp_products_wg_target']) || get_option('default-target-group')){
-            $term_slug=(isset($_SESSION['wp_products_wg_target']))?$_SESSION['wp_products_wg_target']:get_option('default-target-group');
-            $posts=get_posts(
-                array(
-                    'post_type'         => 'products',
-                    'post_status'       => 'publish',
-                    'posts_per_page'    => $count,
-                    'meta_key'          => 'wp_products_wg_rating',
-                    'orderby'          => 'meta_value_num',
-                    'order'             => $order,
-                    'tax_query' => array(
-                        array(
-                            'taxonomy' => 'products_target_groups',
-                            'field' => 'slug',
-                            'terms' => array($term_slug),
-                            'operator' => 'IN',
-                        )
-                    )
-                )
-            );
-            if($posts && !empty($posts)){
-                echo '<ul>';
-                foreach( $posts as $post ) :?>
-                	<li>
-                		<div class="product-thumb">
-                			<a href="<?php the_permalink();?>">
-                				<img src="<?php echo get_the_post_thumbnail_url($post->ID, 'thumbnail'); ?>" alt="<?php echo get_the_title($post->ID);?>"></div>
-                			</a>
-                		<div class="product-rating">
-                    		<?php 
-                    		for($i=1;$i<=5;$i++){
-                    		    $checked=(get_post_meta( $post->ID, 'wp_products_wg_rating', true )>=$i)?'checked':'';
-                    		    echo '<span class="fa fa-star '.$checked.'"></span>';
-                    		}
-                    		?>
-                		</div>
-                		<div class="product-title"><a href="<?php the_permalink();?>"><?php echo get_the_title($post->ID);?></a></div>
-                	</li>
-                <?php endforeach;
-                echo '</ul>';
-            }
+        if(get_option('default-target-group')){
+            echo '<ul data-count="'.$count.'" data-order="'.$order.'"></ul>';
         }
         echo $after_widget;
     }
